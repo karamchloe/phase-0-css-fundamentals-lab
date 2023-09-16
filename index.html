@@ -3,63 +3,98 @@
   <head>
     <meta charset="UTF-8">
     <title>Exceptional Realty Group - Luxury Homes - About</title>
-    <!-- Don't forget to link your CSS file! -->
+   <link rel="stylesheet" href="./style.css" />
+   <style>
+    .center-title {
+        text-align: center;
+    }
+  
+    .center-image {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+   </style>
   </head>
+
   <body>
+    
     <header>
       <!-- logo -->
+      <div class="center-title">
       <h1>Exceptional Realty Group</h1>
 
       <nav>
-        <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+        <a href="index.html" class="navcolor">About</a> <a href="new-properties.html" class="navcolor">New Properties</a> <a href="real-estate-listings.html" class="navcolor">Listings</a> <a href="market-report.html" class="navcolor">Market Report</a> <a href="contact.html" class="navcolor">Contact</a> <a href="http://hud.gov" class="navcolor" target="_blank">H.U.D.</a>
       </nav>
+      </div>
     </header>
 
     <section id="featured-property">
       <figure>
-        <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
-        <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption>
+        <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group" class="center-image">
+        <figcaption class="center-text">345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption>
+        
       </figure>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
+     <div class="center-text">
+      <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
+      </div>
     </section>
 
-    <section id="details">
-      <div>
-        <h3>Contact</h3>
-        <p>
-          <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
-          +1 710 555 1234<br>
-          @fakeRealty
-        </p>
-      </div>
+    <section id="details" class="color">
+
       
-      <div>
-        <h3>Correspondence</h3>
+      <table>
+        <tr>
+          <th class="center-title"><h3>Contact</h3></th>
+      
+          <th><h3>Correspondence</h3></th>
+          <th><h3>Link</h3></th>
+          <th><h3>Follow</h3></tr>
+        <tr>
+        </table>
+        
+        <table>
+          <td>
+            <p>
+              <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
+              +1 710 555 1234<br>
+              @fakeRealty
+            </p>
+          </td>
+    
+        <td>
         <p>
           Exceptional Realty<br>
           P.O. Box 5555<br>
           Brooklyn, NY 11201
         </p>
-      </div>
+        </td>
 
-      <div>
-        <h3>Links</h3>
-        <p>
+        <td>
+          <p>
           <a href="#" target="_blank">Home Restoration</a><br>
           <a href="#" target="_blank">Affordable Mortgages</a><br>
           <a href="#" target="_blank">Professional Moving Crew</a>
-        </p>
-      </div>
+          </p>
+        </td>
 
-      <div>
-        <h3>Follow</h3>
-        <p>
-          <a href="#" target="_blank">YouTube</a><br>
-          <a href="#" target="_blank">Facebook</a><br>
-          <a href="#" target="_blank">Twitter</a>
-        </p>
+        <td>
+          <p>
+            <a href="#" target="_blank">YouTube</a><br>
+            <a href="#" target="_blank">Facebook</a><br>
+            <a href="#" target="_blank">Twitter</a>
+          </p>
+        </td>
+        </tr>
+        </table>
+      
+    
       </div>
     </section>
   </body>
